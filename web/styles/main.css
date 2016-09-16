@@ -1,0 +1,39 @@
+*{
+    font-family: "Verdana", "Arial", sans-serif;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 1.8em;
+}
+h3{
+    font-size: 1.3em;
+}
+li{
+    margin: 15px 1px;
+}
+a{
+    color:orange;   
+}
+a:hover{
+    color:green;
+}
+footer{
+    font-size: small;
+    text-align: center;
+}
+.pumpkin{
+    float: left;
+}
+.bodyhead::first-letter{
+    font-size: 3em;
+}
+.title{
+    color: orange;
+    font-style: italic;
+    text-shadow: 3px 3px #000000;
+}
+.linklist{
+    
+}
