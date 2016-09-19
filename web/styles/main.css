@@ -28,19 +28,26 @@ footer{
     text-align: center;
 	background: linear-gradient(45deg, black, orange, orange, white), orange;
 }
+nav{
+	float: left;
+	width: 160px;
+	padding-right: 10px;
+	margin-bottom: 500px;
+}
 h1{
     font-size: 1.8em;
 }
 h2{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 h3{
-    font-size: 1em;
+    font-size: 1.3em;
 }
 li{
     margin: 15px 1px;
 }
 a{
+	font-weight: bold;
     color:orange;   
 }
 a:hover{
