@@ -27,7 +27,7 @@ footer{
     float: left;
 }
 .bodyhead::first-letter{
-    font-size: 3em;
+    font-size: 2em;
 }
 .title{
     color: orange;
@@ -35,5 +35,5 @@ footer{
     text-shadow: 3px 3px #000000;
 }
 .linklist{
-    
+	margin: 1em .25em;
 }
