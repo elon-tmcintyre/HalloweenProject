@@ -32,7 +32,7 @@ nav{
 	float: left;
 	width: 160px;
 	padding-right: 10px;
-	margin-bottom: 500px;
+	margin-bottom: 400px;
 }
 h1{
     font-size: 1.8em;
@@ -43,9 +43,7 @@ h2{
 h3{
     font-size: 1.3em;
 }
-li{
-    margin: 15px 1px;
-}
+
 a{
 	font-weight: bold;
     color:orange;   
@@ -65,4 +63,17 @@ a:hover{
 }
 .headertext{
 	text-indent: 10px;
+}.horizontalbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:#000;
+}
+horizontalbaritem{
+    color: white;
+    display:inline;
+}
+.sidebaritem{
+    margin: 15px 1px;
 }
