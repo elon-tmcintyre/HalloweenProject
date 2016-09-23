@@ -7,6 +7,7 @@ background-image: url("images/bats.gif");
 body{
 	width: 800px;
 	border-style: solid;
+	border: 0px 2px;
 	background: white;
 	box-shadow: 0px 0px 25px 10px black;
 	margin: 0 auto;
@@ -30,9 +31,10 @@ footer{
 }
 nav{
 	float: left;
-	width: 160px;
+	width: auto;
 	padding-right: 10px;
-	margin-bottom: 400px;
+	margin-left: 0px;
+	margin-bottom: 300px;
 }
 h1{
     font-size: 1.8em;
@@ -44,13 +46,6 @@ h3{
     font-size: 1.3em;
 }
 
-a{
-	font-weight: bold;
-    color:orange;   
-}
-a:hover{
-    color:green;
-}
 .pumpkin{
     float: left;
 	margin: 20px 20px;
@@ -65,15 +60,45 @@ a:hover{
 	text-indent: 10px;
 }.horizontalbar{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 20px 0px;
     width: 100%;
-    background-color:#000;
+    background-color:black;
 }
-horizontalbaritem{
-    color: white;
-    display:inline;
+.horizontalbaritem{
+	margin-left: 50px;
+	text-align: center;
+	padding: 20px 0px;
+	display: inline;
+	overflow: hidden;
+}
+.horizontalbaritem:hover{
+	background-color:gray;
+}
+.horizontalbaritem > a{
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+}
+.home{
+	color:orange;
+}
+.sidebar{
+	list-style-type: none;
 }
 .sidebaritem{
-    margin: 15px 1px;
+    margin: 5px 0px;
+}
+.sidebaritem > a{
+	display: block;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	width: 150px;
+	height: 20px;
+	background-color: orange;
+	border: 4px solid black;
 }
