@@ -6,6 +6,11 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <meta charset="utf-8" />
     <title>Halloween Store</title>
+    <style>
+        .currentpage{
+            color: orange;
+        }
+    </style>
 </head>
 <body>
 	<header>
@@ -16,16 +21,16 @@
         <h2 class="headertext"> 
           For the little Goblin in all of us!
         </h2>
-		</header>
         <ul class ="horizontalbar">
-            <li class = "horizontalbaritem"><a href="">Home</a></li>
-            <li class = "horizontalbaritem"><a href="">Product List</a></li>
-			<li class = "horizontalbaritem"><a href="">Personal</a></li>
-			<li class = "horizontalbaritem"><a href="">Decorating Ideas</a></li>
-			<li class = "horizontalbaritem"><a href="">Join Email</a></li>
+            <li class = "horizontalbaritem"><a class="horizontalbaritemtextselected" href="">Home</a></li>
+            <li class = "horizontalbaritem"><a class="horizontalbaritemtext" href="">Product List</a></li>
+			<li class = "horizontalbaritem"><a class="horizontalbaritemtext"  href="">Personal</a></li>
+			<li class = "horizontalbaritem"><a class="horizontalbaritemtext" href="">Decorating Ideas</a></li>
+			<li class = "horizontalbaritem"><a class="horizontalbaritemtext" href="">Join Email</a></li>
         </ul>
+		</header>
     <main>
-	<nav>
+	<nav class = "sidebarNav">
 		<ul class = "sidebar">
              <li class = "sidebaritem"><a href="products/Props.html">Props</a></li>
              <li class = "sidebaritem"><a href="products/Costumes.html"> Costumes</a></li>
@@ -46,8 +51,9 @@
         <h3>
 		Product of the Week
 		</h3>
-		<img src="images/cat1.jpg" alt="DerangedCat"> <br>
-		<a href="products/cat.html">20" Deranged Cat</a>
+                <a href="products/cat.html">
+                    <img src="images/cat1.jpg" alt="DerangedCat"></a> <br>
+		<a class="featureditem" href="products/cat.html">20" Deranged Cat</a>
          <h3>
              My Guarantee
          </h3>

@@ -7,34 +7,36 @@ background-image: url("images/bats.gif");
 body{
 	width: 800px;
 	border-style: solid;
-	border: 0px 2px;
+	border-top: 1px;
+        border-bottom: 1px;
 	background: white;
 	box-shadow: 0px 0px 25px 10px black;
 	margin: 0 auto;
 }
 main{
-	border-style: solid;
+    border-bottom: 2px solid;
 }
 header{
-	margin: auto auto;
+	margin: auto;
 	padding-top: 1px;
-	padding-bottom: 10px;
 	background: linear-gradient(45deg, white, orange, orange, black), orange;
 }
 footer{
 	margin: auto auto;
 	padding-top: 15px;
 	padding-bottom: 1px;
-    font-size: small;
-    text-align: center;
+        font-size: small;
+        text-align: center;
 	background: linear-gradient(45deg, black, orange, orange, white), orange;
 }
-nav{
+.sidebarNav{
 	float: left;
-	width: auto;
-	padding-right: 10px;
+	padding-right: 30px;
 	margin-left: 0px;
 	margin-bottom: 300px;
+}
+a{
+    color:inherit;
 }
 h1{
     font-size: 1.8em;
@@ -47,11 +49,11 @@ h3{
 }
 
 .pumpkin{
-    float: left;
+        float: left;
 	margin: 20px 20px;
 }
 .bodyhead::first-letter{
-    font-size: 2em;
+        font-size: 2em;
 }
 .linklist{
 	margin: 1em .25em;
@@ -59,46 +61,57 @@ h3{
 .headertext{
 	text-indent: 10px;
 }.horizontalbar{
-    list-style-type: none;
-    padding: 20px 0px;
-    width: 100%;
-    background-color:black;
+        list-style-type: none;
+        padding: 15px 0px;
+        width: 100%;
+        height: 100%;
+        background-color:black;
+        position: relative;
 }
 .horizontalbaritem{
-	margin-left: 50px;
+	margin-left: 55px;
 	text-align: center;
-	padding: 20px 0px;
-	display: inline;
+	padding: 15px 0px;
+        display: inline;
 	overflow: hidden;
 }
-.horizontalbaritem:hover{
+.horizontalbaritemtext:hover{
 	background-color:gray;
 }
-.horizontalbaritem > a{
+.horizontalbaritemtext{
 	color: white;
 	display: inline-block;
 	text-decoration: none;
-	font-weight: bold;
 }
-.home{
-	color:orange;
+.horizontalbaritemtextselected{
+	color: orange;
+	display: inline-block;
+	text-decoration: none;
 }
 .sidebar{
 	list-style-type: none;
 }
 .sidebaritem{
-    margin: 5px 0px;
+        position:relative;
+        margin: 5px 0px;
+}
+.featureditem{
+    color: orange;
+    font-weight: bold;
+}
+.featureditem:hover{
+    color: green;
 }
 .sidebaritem > a{
 	display: block;
 	padding-top:15px;
 	padding-bottom:15px;
-	padding-left: 10px;
+        padding-left:10px;
 	text-decoration: none;
 	font-weight: bold;
 	color: black;
 	width: 150px;
-	height: 20px;
+	height: auto;
 	background-color: orange;
 	border: 4px solid black;
 }
