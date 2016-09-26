@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="styles/cat.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <meta charset="utf-8" />
     <title>Halloween Store</title>
 </head>
@@ -21,41 +21,49 @@
             <li class = "horizontalbaritem"><a class="horizontalbaritemtext" href="">Product List</a></li>
 			<li class = "horizontalbaritem"><a class="horizontalbaritemtext"  href="">Personal</a></li>
 			<li class = "horizontalbaritem"><a class="horizontalbaritemtext" href="">Decorating Ideas</a></li>
-			<li class = "horizontalbaritem"><a class="horizontalbaritemtext" href="">Join Email</a></li>
+			<li class = "horizontalbaritem"><a class="horizontalbaritemtextselected" href="">Join Email</a></li>
         </ul>
 		</header>
-		<main>
-	<nav>
-		<ul id = "sidebar">
+    <main>
+	<nav class = "sidebarNav">
+		<ul class = "sidebar">
              <li class = "sidebaritem"><a href="products/Props.html">Props</a></li>
              <li class = "sidebaritem"><a href="products/Costumes.html"> Costumes</a></li>
              <li class = "sidebaritem"><a href="products/SpecialEffects.html">Special Effects</a></li>
              <li class = "sidebaritem"><a href="products/Masks.html">Masks</a></li>
          </ul>
 		 </nav>
-	<nav id = "rightsidebar">
-	<p><b>
-	Customers who bought this product also bought:
-            </b></p>
-		<ul class ="rightsidebarstyle">
-             <li class = "rightsidebaritem"><a href="products/Props.html"><img class="sidebarimage" src="images/flying_bats.jpg" alt="Flying Bats"><br/>Flying bats</a></li>
-             <li class = "rightsidebaritem"><a href="products/Costumes.html"><img class="sidebarimage" src="images/rat1.jpg" alt="Ugly Rat"><br/> 16" Ugly rat</a></li>
-             <li class = "rightsidebaritem"><a href="products/SpecialEffects.html"><img class="sidebarimage" src="images/strobe1.jpg" alt="Strobe Light"><br/>Mini strobe light</a></li>
-         </ul>
-		 </nav>
-	 <section>
-     <h2> 20" Deranged Cat</h2>
-	 <a href="products/cat.html">
-                    <img class="cat" src="images/cat1.jpg" alt="DerangedCat"></a> <br/>
-	 <p>
-		 This cat provides its own light and is perfect for a backyard haunting.
-		 </br>
-             <b>Price</b>: 19.99
-         </p>
-	</section>
-	</main>
-	
-	
+        <h2>
+            Please enter the following information
+        </h2>
+        <form name="emailForm" method="get" action="">
+            <p>
+                <label>
+                    First Name:
+                </label>
+                <input name="FName" required/>
+            </p>
+            <p>
+                <label>
+                    Last Name:
+                </label>
+                <input name="LName" required/>
+            </p>
+            <p>
+                <label>
+                    Email:
+                </label>
+                <input name="Email" type="email" required/>
+            </p>
+            <p>
+                <label>
+                    Zip Code:
+                </label>
+                <input name="ZipCode" pattern="^[0-9]{5}$" required>
+            </p>
+        </form>
+        
+    </main>
     <footer>
         <p>
             &copy; 2016 Ben Murach
